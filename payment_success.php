@@ -18,7 +18,7 @@ $c_amt = $_COOKIE["ta"];
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Tusolutionweb</title>
+		<title>Zona de pagos</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -31,7 +31,7 @@ $c_amt = $_COOKIE["ta"];
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">	
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand"> Almacenar Tusolutionweb</a>
+				<a href="#" class="navbar-brand"> Almacenar Tienda Online</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span>Nosotros</a></li>
