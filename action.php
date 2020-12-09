@@ -226,9 +226,9 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 		}
 		echo '
 		
-				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 				  <input type="hidden" name="cmd" value="_cart">
-				  <input type="hidden" name="business" value="shoppingcart@khanstore.com">
+				  <input type="hidden" name="business" value="fay.oaxus@gmail.com">
 				  <input type="hidden" name="upload" value="1">';
 				  
 				  $x=0;
@@ -245,17 +245,16 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 				  }
 				  
 				echo   '
-				<input type="hidden" name="return" value="http://www.sysc.esy.es/shoppingCart/payment_success.php"/>
-				<input type="hidden" name="cancel_return" value="http://www.sysc.esy.es/shoppingCart/cancel.php"/>
+				<input type="hidden" name="return" value="http://localhost/tienda_online/profile.php"/>
+				<input type="hidden" name="cancel_return" value="http://localhost/tienda_online/cart.php"/>
 				<input type="hidden" name="currency_code" value="USD"/>
 				<input type="hidden" name="custom" value="'.$uid.'"/>
-				<input style="float:right;margin-right:80px;" type="image" name="submit"
-					src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/blue-rect-paypalcheckout-60px.png" alt="PayPal Checkout"
-					alt="PayPal - The safer, easier way to pay online">
+				<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+				<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1"/>
 				</form>';
-		
-		
-		
+					  
+
+
 		
 	}
 }
