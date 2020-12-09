@@ -226,37 +226,6 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 		}
 		echo '
 		
-<<<<<<< HEAD
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				  <input type="hidden" name="cmd" value="_cart">
-				  <input type="hidden" name="business" value="fay.oaxus@gmail.com">
-				  <input type="hidden" name="upload" value="1">';
-				  
-				  $x=0;
-				  $uid = $_SESSION["uid"];
-				  $sql = "SELECT * FROM cart WHERE user_id = '$uid'";
-				  $run_query = mysqli_query($con,$sql);
-				  while($row=mysqli_fetch_array($run_query)){
-					  $x++;
-				 echo  '<input type="hidden" name="item_name_'.$x.'" value="'.$row["product_title"].'">
-				  <input type="hidden" name="item_number_'.$x.'" value="'.$x.'">
-				  <input type="hidden" name="amount_'.$x.'" value="'.$row["price"].'">
-				  <input type="hidden" name="quantity_'.$x.'" value="'.$row["qty"].'">';
-				  
-				  }
-				  
-				echo   '
-				<input type="hidden" name="return" value="http://localhost/tienda_online/profile.php"/>
-				<input type="hidden" name="cancel_return" value="http://localhost/tienda_online/cart.php"/>
-				<input type="hidden" name="currency_code" value="USD"/>
-				<input type="hidden" name="custom" value="'.$uid.'"/>
-				<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
-				<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1"/>
-				</form>';
-					  
-
-
-=======
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 			<input type="hidden" name="cmd" value="_cart">
 			<input type="hidden" name="business" value="fay.oaxus@gmail.com">
@@ -285,9 +254,6 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 		  </form>';
 		
 		
-		
-		
->>>>>>> 2f5f5d5f265c70c4aad4984ddb1711f92f2da9d4
 		
 	}
 }
