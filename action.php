@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "db.php";
+include "conexion.php";
 if(isset($_POST["category"])){
 	$category_query = "SELECT * FROM categories";
 	$run_query = mysqli_query($con,$category_query) or die(mysqli_error($con));

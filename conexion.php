@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "tienda_tusolutionweb";
+$db = "bdtienda_online";
 
 // Create connection
 $con = mysqli_connect($servername, $username, $password,$db);
