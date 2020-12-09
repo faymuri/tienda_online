@@ -245,7 +245,7 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 			}
 			
 		  echo   '
-		  <input type="hidden" name="return" value="http://localhost/tienda_online/profile.php"/>
+		  <input type="hidden" name="return" value="http://localhost/tienda_online/payment_success.php"/>
 		  <input type="hidden" name="cancel_return" value="http://localhost/tienda_online/cart.php"/>
 		  <input type="hidden" name="currency_code" value="USD"/>
 		  <input type="hidden" name="custom" value="'.$uid.'"/>
