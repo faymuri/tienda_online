@@ -11,6 +11,7 @@ if(!isset($_SESSION["uid"])){
 		<meta charset="UTF-8">
 		<title>toma de orden</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="main.js"></script>

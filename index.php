@@ -10,6 +10,7 @@ if(isset($_SESSION["uid"])){
 		<meta charset="UTF-8">
 		<title>Tienda Online</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	    <link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
@@ -40,7 +41,7 @@ if(isset($_SESSION["uid"])){
 				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn">Buscar</button></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>Cart<span class="badge">0</span></a>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>Carrito<span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">
@@ -129,7 +130,7 @@ if(isset($_SESSION["uid"])){
 						</div> -->
 					</div>
 					<div class="panel-footer">
-<li><a href="" ></a></li>
+                    <a ></a>
 					</div>
 				</div>
 			</div>
